@@ -1,0 +1,103 @@
+<div class="title-block">
+  <h3 class="title pull-left">
+    Страница счета <span class="sparkline bar"></span>
+  </h3>
+
+  <div class="pull-right" >
+    <button class="btn-sm btn btn-primary-outline" (click)="updateload()">
+      <i class="fa fa-refresh" [@loaded]="loadedAnimation" ></i>
+
+    </button>
+
+  </div>
+</div>
+<section class="section">
+  <div class="row">
+    <div class="col col-xs-12 col-sm-12 col-md-6 col-xl-5 stats-col">
+      <div class="card stats" style="height: 291px;">
+        <div class="card-block">
+          <div class="title-block">
+            <h4 class="title">Счет</h4>
+          </div>
+          <div class="row row-sm stats-container">
+            <div class="col-xs-12 stat-col">
+              <div class="stat-icon"> <i class="fa fa-rub"></i> </div>
+              <div class="stat">
+                <div class="value">{{billValueRU}}</div>
+              </div>
+              <progress class="progress stat-progress" value="100" max="100">
+                <div class="progress">
+                  <span class="progress-bar" style="width: 100%;"></span>
+                </div>
+              </progress>
+            </div>
+            <div class="col-xs-12 stat-col">
+              <div class="stat-icon"> <i class="fa fa-euro"></i> </div>
+              <div class="stat">
+                <div class="value">{{billValueEUR}}</div>
+              </div>
+              <progress class="progress stat-progress" value="100" max="100">
+                <div class="progress">
+                  <span class="progress-bar" style="width: 100%;"></span>
+                </div>
+              </progress>
+            </div>
+            <div class="col-xs-12 stat-col">
+              <div class="stat-icon"> <i class="fa fa-dollar"></i> </div>
+              <div class="stat">
+                <div class="value">{{billValueUSD}}</div>
+              </div>
+              <progress class="progress stat-progress" value="100" max="100">
+                <div class="progress">
+                  <span class="progress-bar" style="width: 100%;"></span>
+                </div>
+              </progress>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-12 col-sm-12 col-md-6 col-xl-7 history-col">
+      <div class="card">
+        <div class="card-block">
+          <div class="title-block">
+            <h4 class="title">Курс</h4>
+          </div>
+          <div class="row row-sm stats-container">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>Валюта</th>
+                <th>Курс</th>
+                <th>Дата</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>eur/usd</td>
+                <td>{{usd}}</td>
+                <td>{{date | date: 'dd.MM.yyyy'}}</td>
+              </tr>
+              <tr>
+                <td>eur/rub</td>
+                <td>{{rub}}</td>
+                <td>{{date | date: 'dd.MM.yyyy'}}</td>
+              </tr>
+              <tr>
+                <td>eur/aud</td>
+                <td>{{aud}}</td>
+                <td>{{date | date: 'dd.MM.yyyy'}}</td>
+              </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

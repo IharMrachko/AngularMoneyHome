@@ -1,0 +1,28 @@
+
+  <div class="title-block">
+    <h3 class="title">
+      Страница записей <span class="sparkline bar"></span>
+    </h3>
+  </div>
+
+  <section class="section text-center" *ngIf="!isLoaded">
+    Loading...
+  </section>
+
+  <section class="section" *ngIf="isLoaded">
+    <div class="row">
+      <div class="col-md-6">
+        <mrI-add-event [categories] = "categories"></mrI-add-event>
+      </div>
+      <div class="col-md-6">
+       <mrI-add-category (onCategoryAdd)="newCategoryAdded($event)"></mrI-add-category>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mrI-edit-category
+          (onCategoryEdit)="categoryWasEdited($event)"
+          [categories] = "categories"></mrI-edit-category>
+      </div>
+    </div>
+  </section>

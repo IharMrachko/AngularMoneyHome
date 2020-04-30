@@ -1,0 +1,233 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "mel@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    },
+    {
+      "email": "ihormrochko@gmail.com",
+      "password": "12345678",
+      "name": "Игорь",
+      "id": 2
+    },
+    {
+      "email": "ipslednev@bk.ru",
+      "password": "34235235235",
+      "name": "Артем",
+      "id": 3
+    },
+    {
+      "email": "las@maik.tu",
+      "password": "ncncncnccdsv",
+      "name": "Dera",
+      "id": 4
+    },
+    {
+      "email": "las@maik.tu",
+      "password": "mamama2232323",
+      "name": "Lena",
+      "id": 5
+    },
+    {
+      "email": "val@mail.com",
+      "password": "12434343",
+      "name": "Bob",
+      "id": 6
+    },
+    {
+      "email": "dod@mail.com",
+      "password": "12525252",
+      "name": "CanT",
+      "id": 7
+    }
+  ],
+  "bill": [
+    {
+      "value": 536546,
+      "currency": "RUB",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "value": 115,
+      "currency": "EUR"
+    },
+    {
+      "id": 3,
+      "value": 8000,
+      "currency": "USD"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Ремонт ",
+      "capacity": 1100000,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Машина",
+      "capacity": 7000
+    },
+    {
+      "name": "traineng",
+      "capacity": 100,
+      "id": 4
+    },
+    {
+      "name": "Barbara Barabara",
+      "capacity": 1,
+      "id": 5
+    },
+    {
+      "name": "Бибика",
+      "capacity": 1,
+      "id": 6
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.06.2017 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "income",
+      "amount": 1480,
+      "category": 2,
+      "date": "17.06.2017 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 2470,
+      "category": 2,
+      "date": "17.06.2017 14:00:58",
+      "id": 4,
+      "description": "Закупка на неделю"
+    },
+    {
+      "type": "outcome",
+      "amount": 4000,
+      "category": 3,
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    },
+    {
+      "type": "income",
+      "amount": 100000,
+      "category": 1,
+      "date": "01.10.2019 20:07:19",
+      "description": "Test",
+      "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 75000,
+      "category": 1,
+      "date": "03.10.2019 13:21:37",
+      "description": "Test",
+      "id": 7
+    },
+    {
+      "type": "income",
+      "amount": 10000,
+      "category": 1,
+      "date": "09.10.2019 11:37:28",
+      "description": "Зарплата",
+      "id": 8
+    },
+    {
+      "type": "outcome",
+      "amount": 300,
+      "category": 3,
+      "date": "25.11.2019 14:28:44",
+      "description": "Бензин",
+      "id": 9
+    },
+    {
+      "type": "income",
+      "amount": 12344,
+      "category": 1,
+      "date": "06.04.2020 13:45:55",
+      "description": "Подвез человека",
+      "id": 10
+    },
+    {
+      "type": "outcome",
+      "amount": 1222,
+      "category": 3,
+      "date": "06.04.2020 13:53:31",
+      "description": "Поменял ступицы",
+      "id": 11
+    },
+    {
+      "type": "income",
+      "amount": 12121212,
+      "category": 1,
+      "date": "06.04.2020 13:56:34",
+      "description": "Что",
+      "id": 12
+    },
+    {
+      "type": "outcome",
+      "amount": 10000,
+      "category": 1,
+      "date": "06.04.2020 13:57:05",
+      "description": " завел бабу",
+      "id": 13
+    },
+    {
+      "type": "outcome",
+      "amount": 120000,
+      "category": 1,
+      "date": "06.04.2020 13:57:26",
+      "description": " зввв",
+      "id": 14
+    },
+    {
+      "type": "outcome",
+      "amount": 10000000,
+      "category": 1,
+      "date": "06.04.2020 14:57:53",
+      "description": "кухня",
+      "id": 15
+    },
+    {
+      "type": "outcome",
+      "amount": 1454543,
+      "category": 1,
+      "date": "07.04.2020 12:38:44",
+      "description": "купил кран",
+      "id": 16
+    },
+    {
+      "type": "outcome",
+      "amount": 123,
+      "category": 1,
+      "date": "10.04.2020 13:56:52",
+      "description": "Бензин",
+      "id": 17
+    }
+  ]
+}
